@@ -49,7 +49,7 @@
         targets: '.circles span',
         keyframes: [
             {opacity: [0, .3]},
-            {opacity: [.3, .1], delay: anime.stagger(100, {direction: 'reverse'})}
+            {opacity: [0.6, 0.3], delay: anime.stagger(100, {direction: 'reverse'})}
         ],
         delay: anime.stagger(100, {direction: 'reverse'})
     })

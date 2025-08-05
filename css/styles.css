@@ -2587,7 +2587,7 @@ img.u-pull-left {
     font-weight    : 400;
     color          : var(--color-white);
     text-transform : uppercase;
-    letter-spacing : .3em;
+
     margin-top     : 0;
     margin-left    : .2rem;
     margin-bottom  : var(--vspace-0_5);
@@ -2612,7 +2612,7 @@ img.u-pull-left {
 }
 
 .text-huge-title {
-    --text-huge : 10.8rem;
+    --text-huge : 6rem;
     font-size   : var(--text-huge);
     line-height : 1.0740;
     margin-top  : 0;
@@ -2793,38 +2793,42 @@ img.u-pull-left {
 }
 
 .s-pagewrap .circles span {
-    display       : block;
-    border        : 1px solid var(--color-1);
-    border-radius : 50%;
-    opacity       : .1;
-    transform     : translate(-50%, -50%);
-    left          : 50%;
-    top           : 50%;
+    display: block;
+    border: 5px solid;
+    border-radius: 50%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
-
 .s-pagewrap .circles span:nth-child(1) {
     height : 100%;
     width  : 100%;
+    border-color :var(--color-1);
 }
-
 .s-pagewrap .circles span:nth-child(2) {
     height : 80%;
     width  : 80%;
+    border-color :rgb(255, 0, 0);
 }
-
 .s-pagewrap .circles span:nth-child(3) {
     height : 60%;
     width  : 60%;
+    border-color :rgb(0, 13, 255);
 }
-
 .s-pagewrap .circles span:nth-child(4) {
     height : 40%;
     width  : 40%;
+    border-color :rgb(255, 0, 0);
 }
-
 .s-pagewrap .circles span:nth-child(5) {
     height : 20%;
     width  : 20%;
+    border-color :var(--color-1);
 }
 
 .ss-preload .s-pagewrap {
@@ -3140,13 +3144,13 @@ img.u-pull-left {
 .intro-social {
     z-index          : 1;
     list-style       : none;
-    display          : flex;
+    /* display          : flex; */
     padding          : 0 0 0 9.6rem;
-    transform        : rotate(-90deg) translateX(-50%);
+    /* transform        : rotate(-90deg) translateX(-50%);
     transform-origin : left bottom;
     position         : absolute;
     top              : 50%;
-    left             : calc(100% - 6rem);
+    left             : calc(100% - 6rem); */
 }
 
 .intro-social li {
@@ -3746,16 +3750,20 @@ width: 40px; height:40px;
 .modal-popup__cat li:last-child::after {
     display : none;
 }
-
+.modal-popup__details_div{
+    display: flex;
+    flex-direction: row-reverse;
+}
 .modal-popup__details {
     background-color : rgba(0, 0, 0, 0.3);
     font-size        : var(--text-xs);
     line-height      : var(--vspace-1_25);
     color            : white;
     padding          : 0 1.2rem;
-    position         : absolute;
+    /* position         : absolute;
     top              : var(--vspace-1);
-    left             : var(--vspace-1);
+    left             : var(--vspace-1); */
+
 }
 
 .modal-popup__details:focus,
